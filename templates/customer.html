@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<style>
+table,th,
+td {
+border: 1px solid black;
+}
+</style>
+<body>
+<table>
+<tr>
+<th>Name</th>
+<th>Phone</th>
+<th>Location</th>
+</tr>
+{% for customers in customer %}
+<tr>
+<td>{{ customers['name']}}</td>
+<td>{{ customers['phone'] }}</td>
+<td>{{ customers['location'] }}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</head>
+</html>
