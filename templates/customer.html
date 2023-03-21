@@ -13,12 +13,14 @@ border: 1px solid black;
 <th>Name</th>
 <th>Phone</th>
 <th>Location</th>
+<th>Delete</th>
 </tr>
 {% for customers in customer %}
 <tr>
-<td>{{ customers['name']}}</td>
+<td>{{ customers['name'] }}</td>
 <td>{{ customers['phone'] }}</td>
 <td>{{ customers['location'] }}</td>
+<td><a href="{{ url_for('delete_data', name = customers['name']) }}">Delete</a></td>
 </tr>
 {% endfor %}
 </table>

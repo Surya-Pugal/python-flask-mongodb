@@ -7,15 +7,19 @@
     <title>Page Title</title>
 </head>
 <body>
-    <form action="{{ url_for('show_data') }}" method="post">
+    <form action="{{ url_for('button') }}" method="post">
         Name:
         <input type="text" name="name"><br>
         Phone Number:
         <input type="number" name="phone"><br>
         Location:
         <input type="text" name="location"><br>
-        <input type="submit" value="Submit"><br>
+        <input type="submit" name="submit_button" value="Add">
+        <input type="submit" name="submit_button" value="Update">
+        
 
     </form> 
+   
+    
 </body>
 </html>
